@@ -1,4 +1,5 @@
 // FSJS - Random Quote Generator
+// Adds silly line for test
 
 // Create the array of quote objects and name it quotes
 var quotes = [
