@@ -1,5 +1,6 @@
 // FSJS - Random Quote Generator
 // Adds silly line for test
+var randomNumber = Math.ceil(quotes.length);
 
 // Create the array of quote objects and name it quotes
 var quotes = [
