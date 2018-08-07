@@ -8,36 +8,36 @@ var quotes = [
     source: "Karl-Magnus Thorsnes",
     citation: "Voices in head",
     year: 2018
-    }
+    },
 {
-    quote: "“Great minds discuss ideas; average minds discuss events; small minds discuss people.”,
+    quote: "Great minds discuss ideas; average minds discuss events; small minds discuss people.",
     source: "Eleanor Roosevelt",
-    citation: ,
+    citation: null,
     year: 2018
-}
+},
 {
     quote: "Jerry, just remember, it's not a lie if you believe it.",
     source: "George Costanza",
     citation: "Seinfeld S06E15",
     year: 1995
-}
+},
 {
     quote: "But man is not made for defeat. A man can be destroyed but not defeated.",
     source: "Ernest Hemingway",
-    citation: "",
-    year: ""
-}
+    citation: null,
+    year: null
+},
 {
     quote: "Learning never exhausts the mind.",
     source: "Leonardo da Vinci",
-    citation: "",
+    citation: null,
     year: "2"
-}
+},
 {
     quote: "Wise men speak because they have something to say; Fools because they have to say something.",
     source: "Plato",
-    citation: "",
-    year: ""
+    citation: null,
+    year: null
 }
 ];
 
