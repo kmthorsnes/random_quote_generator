@@ -58,4 +58,19 @@ document.getElementById('loadQuote').addEventListener("click", printQuote, false
 // }
 // console.log(returnwords);
 
-console.log(getRandomQuote);
+// console.log(getRandomQuote);
+
+// console.log(quotes.quote[(Math.floor(Math.random() * quotes.length))]);
+
+var array = [{
+        foo: 'bar'
+    },
+    {
+        hello: 'world'
+    }
+];
+
+var randomNumber = Math.floor(Math.random() * quotes.length);
+
+console.log(array[0]['foo']);
+console.log(quotes[randomNumber]['quote']);
