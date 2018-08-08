@@ -1,9 +1,4 @@
 // FSJS - Random Quote Generator
-// Adds silly line for test
-
-
-
-
 // Create the array of quote objects and name it quotes
 var quotes = [{
         quote: "This is my quote, there are many like it, but this is mine.",
@@ -38,9 +33,10 @@ var quotes = [{
 ];
 
 
-// Create the getRandomQuuote function and name it getRandomQuote
-function getRandomQuuote() {
-
+// Create the getRandomQuote function and name it getRandomQuote
+function getRandomQuote() {
+    let randomQuote = Math.floor(Math.random() * quotes.length);
+    return quotes[randomQuote];
 };
 
 
@@ -54,5 +50,12 @@ function printQuote() {
 // when user clicks anywhere on the button, the "printQuote" function is called
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
-var randomNumber = Math.floor(Math.random() * quotes.length );
-console.log(randomNumber);
+// var randomNumber = Math.floor(Math.random() * quotes.length );
+// console.log(randomNumber);
+
+// function returnwords() = {
+//     return randomNumber;
+// }
+// console.log(returnwords);
+
+console.log(getRandomQuote);
