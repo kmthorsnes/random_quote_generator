@@ -42,7 +42,8 @@ function getRandomQuote() {
 
 // Create the printQuote function and name it printQuote
 function printQuote() {
-
+    document.body.style.backgroundColor = randomColor;
+    document.getElementById("loadQuote").style.backgroundColor = randomColor;
 };
 
 
@@ -71,6 +72,12 @@ var array = [{
 ];
 
 var randomNumber = Math.floor(Math.random() * quotes.length);
+var randomColor = '#' + Math.random().toString(16).slice(2, 8).toUpperCase();
 
 console.log(array[0]['foo']);
 console.log(quotes[randomNumber]['quote']);
+console.log(quotes[randomNumber]['source']);
+
+console.log(randomColor);
+document.body.style.backgroundColor = randomColor;
+document.getElementById("loadQuote").style.backgroundColor = randomColor;
