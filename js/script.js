@@ -1,3 +1,6 @@
+
+var randomColor = '#' + Math.random().toString(16).slice(2, 8).toUpperCase();
+
 // FSJS - Random Quote Generator
 // Create the array of quote objects and name it quotes
 var quotes = [{
@@ -32,6 +35,8 @@ var quotes = [{
     }
 ];
 
+var randomNumber = Math.floor(Math.random() * quotes.length);
+
 
 // Create the getRandomQuote function and name it getRandomQuote
 function getRandomQuote() {
@@ -42,8 +47,10 @@ function getRandomQuote() {
 
 // Create the printQuote function and name it printQuote
 function printQuote() {
-    document.body.style.backgroundColor = randomColor;
-    document.getElementById("loadQuote").style.backgroundColor = randomColor;
+    console.log("hello");
+    document.body.style.background = "randomColor";
+    // document.body.style.backgroundColor = v;
+    // document.getElementById("quote").innerHTML = "Hello JavaScript!";
 };
 
 
@@ -71,13 +78,13 @@ var array = [{
     }
 ];
 
-var randomNumber = Math.floor(Math.random() * quotes.length);
-var randomColor = '#' + Math.random().toString(16).slice(2, 8).toUpperCase();
 
-console.log(array[0]['foo']);
+
 console.log(quotes[randomNumber]['quote']);
 console.log(quotes[randomNumber]['source']);
+console.log(quotes[randomNumber]['citation']);
 
 console.log(randomColor);
 document.body.style.backgroundColor = randomColor;
 document.getElementById("loadQuote").style.backgroundColor = randomColor;
+document.body.style.background = ("randomColor");
