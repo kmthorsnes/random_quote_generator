@@ -1,37 +1,43 @@
-
+// Variable that creates a random HEX-code to use as color background. 
 var randomColor = '#' + Math.random().toString(16).slice(2, 8).toUpperCase();
 
 // FSJS - Random Quote Generator
 // Create the array of quote objects and name it quotes
 var quotes = [{
-        quote: "This is my quote, there are many like it, but this is mine.",
-        source: "Karl-Magnus Thorsnes",
-        citation: "Voices in head"
+        quote: "We shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields and in the streets, we shall fight in the hills; we shall never surrender",
+        source: "Winston Churchill",
+        citation: "1940",
+        category: "#Politics"
     },
     {
-        quote: "Great minds discuss ideas; average minds discuss events; small minds discuss people.",
-        source: "Eleanor Roosevelt",
-        citation: "kuk"
+        quote: "Timeo Danaos et dona ferentes",
+        source: "Virgil",
+        citation: "Between 29 and 19 BC",
+        category: "#Philosophy"
     },
     {
         quote: "Jerry, just remember, it's not a lie if you believe it.",
         source: "George Costanza",
-        citation: "Seinfeld S06E15"
+        citation: "Seinfeld S06E15",
+        category: "#humour"
     },
     {
         quote: "But man is not made for defeat. A man can be destroyed but not defeated.",
         source: "Ernest Hemingway",
-        citation: "kuk"
+        citation: "The old man and the Sea - 1952",
+        category: "#Philosophy"
     },
     {
-        quote: "Learning never exhausts the mind.",
-        source: "Leonardo da Vinci",
-        citation: "kuk"
+        quote: "Veni, vidi, vici",
+        source: "Julius Caesar ",
+        citation: "47 BC",
+        category: "#Philosophy"
     },
     {
-        quote: "Wise men speak because they have something to say; Fools because they have to say something.",
-        source: "Plato",
-        citation: "kuk"
+        quote: "Trying is just the first step toward failure",
+        source: "Homer Simpson",
+        citation: "Seinfeld S09E09",
+        category: "#humour"
     }
 ];
 
