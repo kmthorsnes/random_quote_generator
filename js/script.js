@@ -85,6 +85,8 @@ function printQuote() {
     print(message);
     randomColorToPage();
     document.body.style.backgroundColor = randomColorToPage();
+    document.getElementById("loadQuote").style.background= document.body.style.backgroundColor;
+
 }
 
 
