@@ -1,4 +1,5 @@
 // FSJS - Random Quote Generator
+
 // Create the array of quote objects and name it quotes
 var quotes = [
   {
@@ -63,7 +64,7 @@ function getRandomQuote() {
   return randomQuote;
 }
 
-// Print function for use in printQuote function
+// Creates print function for use in printQuote function
 function print(quote) {
     var outputDiv = document.getElementById("quote-box");
     outputDiv.innerHTML = quote;
@@ -98,7 +99,7 @@ document
   .getElementById("loadQuote")
   .addEventListener("click", printQuote, false);
 
-// Function that simulates a click every 10th second changing both color and quote
+// Function that simulates a click every 10th second changing both color and quote every 10th second. 
 setInterval(function() {
   document.getElementById("loadQuote").click();
 }, 10000);
