@@ -1,15 +1,10 @@
-// Empty variable for the variable that will set the color of background and button
-var randomColor = "";
-
 // FSJS - Random Quote Generator
 // Create the array of quote objects and name it quotes
 var quotes = [
   {
-    quote:
-      "We shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields and in the streets, we shall fight in the hills; we shall never surrender",
+    quote: "We shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields and in the streets, we shall fight in the hills; we shall never surrender",
     source: "Winston Churchill",
-    citation:
-      "Speech to House of Commons of the Parliament of the United Kingdom",
+    citation: "Speech to House of Commons of the Parliament of the United Kingdom",
     year: 1940,
     category: "#politics"
   },
@@ -28,8 +23,7 @@ var quotes = [
     category: "#humour"
   },
   {
-    quote:
-      "But man is not made for defeat. A man can be destroyed but not defeated.",
+    quote: "But man is not made for defeat. A man can be destroyed but not defeated.",
     source: "Ernest Hemingway",
     citation: "The old man and the Sea",
     year: 1952,
