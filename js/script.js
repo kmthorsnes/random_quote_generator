@@ -38,7 +38,7 @@ var quotes = [
       "But man is not made for defeat. A man can be destroyed but not defeated.",
     source: "Ernest Hemingway",
     citation: "The old man and the Sea",
-    year: 11952,
+    year: 1952,
     category: "#Philosophy"
   },
   {
@@ -57,14 +57,7 @@ var quotes = [
   }
 ];
 
-// Create the getRandomQuote function and name it getRandomQuote
-function getRandomQuote() {
-  var randomNumber = Math.floor(Math.random() * quotes.length);
-  var randomQuote = quotes[randomNumber]["quote"];
-  return randomQuote ;;
-}
-
-// Function that creates a HEXcode, stores it in a variable and returns it
+// Function that creates a HEXcode, stores it in a variable and returns it. Shamelessly stolen from tha internet
 function randomColorToPage() {
   var randomColor =
     "#" +
@@ -75,11 +68,17 @@ function randomColorToPage() {
   return randomColor;
 }
 
+// Create the getRandomQuote function and name it getRandomQuote
+function getRandomQuote() {
+  var randomNumber = Math.floor(Math.random() * quotes.length);
+  var randomQuote = quotes[randomNumber];
+  return randomQuote;
+}
+
 // Create the printQuote function and name it printQuote
 function printQuote() {
   var quotes = getRandomQuote();
-  toScreen = '<p class="quote">' + quotes + "</p>";
-  toScreen2 = '<p class="source">' + quotes + "</p>";
+  var toScreen ='<p class="quote">' + quotes.quote + "</p>" + '<p class="source">' + quotes.source + '<span class="citation">'  + quotes.citation + '</span><span class="year">'  + quotes.year +  '</span></p>';
   print(toScreen);
   randomColorToPage();
   document.body.style.backgroundColor = randomColorToPage();
@@ -87,7 +86,9 @@ function printQuote() {
     document.body.style.backgroundColor;
 }
 // Function that simulates a click every 10th second changing both color and quote
-setInterval(function () {document.getElementById("loadQuote").click();}, 10000);
+// setInterval(function() {
+  document.getElementById("loadQuote").click();
+}, 10000);
 
 // This event listener will respond to "Show another quote" button clicks
 // when user clicks anywhere on the button, the "printQuote" function is called
@@ -100,4 +101,3 @@ document
 // console.log(quotes[randomNumber]['citation']);
 // console.log(quotes[randomNumber]['year']);
 // console.log(quotes[randomNumber]['category']);
-
