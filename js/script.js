@@ -1,12 +1,6 @@
-// Variable that creates a random HEX-code to use as color background.
+// Empty variable for the variable that will set the color of background and button
 var randomColor = "";
 
-var printToPage = "";
-
-function print(quote) {
-  var outputDiv = document.getElementById("quote-box");
-  outputDiv.innerHTML = quote;
-}
 // FSJS - Random Quote Generator
 // Create the array of quote objects and name it quotes
 var quotes = [
@@ -75,10 +69,28 @@ function getRandomQuote() {
   return randomQuote;
 }
 
+// Print function for use in printQuote function
+function print(quote) {
+    var outputDiv = document.getElementById("quote-box");
+    outputDiv.innerHTML = quote;
+  }
+
 // Create the printQuote function and name it printQuote
 function printQuote() {
   var quotes = getRandomQuote();
-  var toScreen ='<p class="quote">' + quotes.quote + "</p>" + '<p class="source">' + quotes.source + '<span class="citation">'  + quotes.citation + '</span><span class="year">'  + quotes.year +  '</span><span class="category"> '  + quotes.category +  '</span></p>';
+  var toScreen =
+    '<p class="quote">' +
+    quotes.quote +
+    "</p>" +
+    '<p class="source">' +
+    quotes.source +
+    '<span class="citation">' +
+    quotes.citation +
+    '</span><span class="year">' +
+    quotes.year +
+    '</span><span class="category"> ' +
+    quotes.category +
+    "</span></p>";
   print(toScreen);
   randomColorToPage();
   document.body.style.backgroundColor = randomColorToPage();
@@ -94,5 +106,5 @@ document
 
 // Function that simulates a click every 10th second changing both color and quote
 setInterval(function() {
-    document.getElementById("loadQuote").click();
-  }, 10000);
+  document.getElementById("loadQuote").click();
+}, 10000);
