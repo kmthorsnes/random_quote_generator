@@ -48,12 +48,7 @@ var quotes = [
 
 // Function that creates a HEXcode, stores it in a variable and returns it. Shamelessly stolen from tha internet
 function randomColorToPage() {
-  var randomColor =
-    "#" +
-    Math.random()
-      .toString(16)
-      .slice(2, 8)
-      .toUpperCase();
+  var randomColor = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
   return randomColor;
 }
 
@@ -99,7 +94,7 @@ document
   .getElementById("loadQuote")
   .addEventListener("click", printQuote, false);
 
-// Function that simulates a click every 10th second changing both color and quote every 10th second. 
+// Function that simulates a click every 10th second changing both color and quote every 10th second.
 setInterval(function() {
   document.getElementById("loadQuote").click();
 }, 10000);
