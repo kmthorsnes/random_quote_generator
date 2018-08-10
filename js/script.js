@@ -17,14 +17,14 @@ var quotes = [
     citation:
       "Speech to House of Commons of the Parliament of the United Kingdom",
     year: 1940,
-    category: "#Politics"
+    category: "#politics"
   },
   {
     quote: "Timeo Danaos et dona ferentes",
     source: "Virgil",
     citation: "Aeneid",
     year: "",
-    category: "#Philosophy"
+    category: "#philosophy"
   },
   {
     quote: "Jerry, just remember, it's not a lie if you believe it.",
@@ -39,14 +39,14 @@ var quotes = [
     source: "Ernest Hemingway",
     citation: "The old man and the Sea",
     year: 1952,
-    category: "#Philosophy"
+    category: "#philosophy"
   },
   {
     quote: "Veni, vidi, vici",
     source: "Julius Caesar ",
     citation: "Letter to the Roman Senate",
     year: "",
-    category: "#Philosophy"
+    category: "#philosophy"
   },
   {
     quote: "Trying is just the first step toward failure",
@@ -78,17 +78,13 @@ function getRandomQuote() {
 // Create the printQuote function and name it printQuote
 function printQuote() {
   var quotes = getRandomQuote();
-  var toScreen ='<p class="quote">' + quotes.quote + "</p>" + '<p class="source">' + quotes.source + '<span class="citation">'  + quotes.citation + '</span><span class="year">'  + quotes.year +  '</span></p>';
+  var toScreen ='<p class="quote">' + quotes.quote + "</p>" + '<p class="source">' + quotes.source + '<span class="citation">'  + quotes.citation + '</span><span class="year">'  + quotes.year +  '</span><span class="category"> '  + quotes.category +  '</span></p>';
   print(toScreen);
   randomColorToPage();
   document.body.style.backgroundColor = randomColorToPage();
   document.getElementById("loadQuote").style.background =
     document.body.style.backgroundColor;
 }
-// Function that simulates a click every 10th second changing both color and quote
-// setInterval(function() {
-  document.getElementById("loadQuote").click();
-}, 10000);
 
 // This event listener will respond to "Show another quote" button clicks
 // when user clicks anywhere on the button, the "printQuote" function is called
@@ -96,8 +92,7 @@ document
   .getElementById("loadQuote")
   .addEventListener("click", printQuote, false);
 
-// console.log(quotes[randomNumber]['quote']);
-// console.log(quotes[randomNumber]['source']);
-// console.log(quotes[randomNumber]['citation']);
-// console.log(quotes[randomNumber]['year']);
-// console.log(quotes[randomNumber]['category']);
+// Function that simulates a click every 10th second changing both color and quote
+setInterval(function() {
+    document.getElementById("loadQuote").click();
+  }, 10000);
